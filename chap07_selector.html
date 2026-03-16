@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>chap07_selector</title>
+<!--    <style>-->
+<!--        /* 인터널 방식 */-->
+<!--        div {-->
+<!--            width: 100px;-->
+<!--            height: 50px;-->
+<!--            background-color: red;-->
+<!--        }-->
+<!--    </style>-->
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+<div>
+    <p class="font-size">이것은 직계 자식 입니다.</p>
+    <header>
+        <p id="a" class="font-size">이것은 후손입니다.</p>
+    </header>
+</div>
+
+<button>이것은 버튼입니다.</button>
+
+<input type="text" disabled value="아이디" />
+<input type="checkbox" disabled />
+
+<table>
+    <thead>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>직업</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>홍길동</td>
+            <td>30</td>
+            <td>개발자</td>
+        </tr>
+        <tr>
+            <td>이순신</td>
+            <td>45</td>
+            <td>장군</td>
+        </tr>
+        <tr>
+            <td>세종대왕</td>
+            <td>60</td>
+            <td>왕</td>
+        </tr>
+        <tr>
+            <td>율곡이이</td>
+            <td>50</td>
+            <td>대신</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">특별공지</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

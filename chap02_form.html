@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chap02_form</title>
+</head>
+<body>
+<!--
+    form 태그는 여러가지의 input를 묶어서 한꺼번에 전송할 때 묶는 역할을 하는데,
+    2가지 방식으로 전달이 가능함
+
+    1. GET 방식
+        - 주수줄에 내용을 전달하는 방식
+        - 보안상에 취약
+        - https://postman-echo.com/get
+        ?
+        name=%ED%99%8D%EA%B8%B8%EB%8F%84
+        &
+        email=abc%40ac.com
+        &
+        password=1234
+        - name = 에 들어가는 것이 백엔드에게 전달 하는 이름
+     2. POST 방식
+        - 주소즐에 내용을 전달하지 않고, body에 내용을 전달하는 방식
+        - 외부에서 알면 안될때
+        - 편지로 생각 편지봉투는 주소 편지지는 꺼내보지 않는 이상 알수 없다
+        - 편지를 만들어서 편지지에 내용을 적어서 전달
+-->
+<h1>GET 방식</h1>
+<form method="get" action="https://postman-echo.com/get">
+    <label>이름 : <input type="text" name="name" ></label><br />
+    <label>이메일 : <input type="email" name="email" /></label><br />
+    <label>비밀번호 : <input type="password" name="password" /></label><br />
+    <button type="submit">전송</button>
+    <!--
+        버튼의 기본값 submit : 전송하는 것임
+        동작이 필요한 것 은 type="button"
+     -->
+</form>
+
+<h1>POST 방식</h1>
+<form method="post" action="https://postman-echo.com/post">
+    <label>이름 : <input type="text" name="name" ></label><br />
+    <label>이메일 : <input type="email" name="email" /></label><br />
+    <label>비밀번호 : <input type="password" name="password" /></label><br />
+    <button>전송</button>
+</form>
+</body>
+</html>
