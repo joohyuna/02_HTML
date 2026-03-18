@@ -1,0 +1,60 @@
+.box {  /* 여러개를 사용할수 잇다 우선 순위 설개 */
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e74c3c;
+}
+
+.fixed {
+    position: fixed;            /* 화면에 고정로 동작 */
+    /* top 또는 bottom, 그리고 left 또는 rigth */
+    bottom: 50px;
+    right: 50px;
+    background-color: #e74c3c;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sticky {
+    position: sticky;  /* 스크롤이 동작하다 원하는 위치에 가면 고정 */
+    top: 0;
+    background-color: #2ecc71;
+}
+
+.spacer {
+    height: 400px;
+    background-color: #d9ecef;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    color: #adb5bd;
+    border-radius: 8px;
+}
+
+.parent {
+    position: relative;
+    background-color: #dcf0f1;
+    padding: 40px;
+    border: 2px dashed #95a5ab;
+}
+
+.child {
+    /* "relative"가 선언이 된 조상의 위치를 기준으로 자리를 잡겠다  absolute와 relative는 짝꿍이다. */
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: #3498db;
+}
+
+
+
+
+
+

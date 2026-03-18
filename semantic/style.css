@@ -20,7 +20,6 @@ nav ul {
     justify-content: center;  /* ul의 아이템 들을 가로로 중앙 정력 */
 }
 
-
 nav ul li a { /* a 요소는 인라인 요소라서  */
     color: white;
     display: block;
@@ -42,18 +41,16 @@ nav ul li a:hover {
 }
 
 main {
-    flex: 3;   /* 3:1  비율로 동작 */
+    flex: 3;   /* 3:1  비율로 동작   열러개 일때 비율잡기 */
 }
 
 aside {
     flex: 1;
-
 }
 
 aside a {
     text-decoration: none;
     color: #3498db;
-
 }
 
 section {
@@ -62,8 +59,8 @@ section {
     gap: 20px;
 }
 
-/* 반복적인 것을 적용할때 재사용 */
-.card-box {
+/* 중복적인 코드, 그리고 재사용 효율적인 */
+.card {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
