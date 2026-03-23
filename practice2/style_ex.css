@@ -12,13 +12,58 @@ body {
 ul {
     list-style: none;
     background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
 }
 
 
 nav ul {
     display: flex;
+    gap: 1px;
 }
 
 nav ul li {
+    padding: 24px 10px;
+    flex: 1;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background-color 0.2s linear;
+}
+
+nav ul li:hover {
+    background-color: #f0f0f0;
 
 }
+
+nav ul li:nth-of-type(6) {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    display: flex;
+    color: #aaa;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 10px 50px;
+}
+.crumbs {
+    padding-right: 5px;
+    text-transform: capitalize;
+}
+
+.crumbs:last-child {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+
+
