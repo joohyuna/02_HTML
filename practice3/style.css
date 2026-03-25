@@ -69,6 +69,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 
 .hdd-size {
@@ -131,6 +132,7 @@ body {
 .setting-card > button:hover {
     background-color: #1e293b;
     color: white;
+    transition: background-color 0.2s linear;
 }
 
 .stats-area {
