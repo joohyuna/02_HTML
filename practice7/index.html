@@ -3,97 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>관리자 페이지</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 </head>
 <body>
-    <div class="container">
-      <aside class="sidebar">
+<div class="container">
+    <aside class="sidebar">
         <div class="logo">
-          <i class="fa-solid fa-cube brand-icon"></i>
-          <h2>MyDash</h2>
+            <i class="fa-solid fa-cube brand-icon"></i>
+            <h2>MyDash</h2>
         </div>
         <nav class="nav-menu">
-          <a href="#" class="nav-item active">
-            <i class="fa-regular fa-id-badge"></i>
-            <span>Profile Info</span>
-          </a>
-          <a href="#" class="nav-item">
-            <i class="fa-solid fa-shield-halved"></i>
-            <span>Account Security</span>
-          </a>
-          <a href="#" class="nav-item">
-            <i class="fa-regular fa-bell"></i>
-            <span>Notifications</span>
-          </a>
-          <a href="#" class="nav-item">
-            <i class="fa-solid fa-credit-card"></i>
-            <span>Billing Details</span>
-          </a>
+            <a href="#" class="nav-item active">
+                <i class="fa-regular fa-id-badge"></i>
+                <span>Profile Info</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Account Security</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Billing Details</span>
+            </a>
         </nav>
-      </aside>
-      <main class="main-content">
+    </aside>
+    <main class="main-content">
         <header class="top-header">
-          <div class="header-text">
-            <h2>Profile Information</h2>
-            <p>Update your photo and personal details.</p>
-          </div>
-          <div class="user-shortcut">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <div class="user-avatar-small">A</div>
-          </div>
+            <div class="header-text">
+                <h2>Profile Information</h2>
+                <p>Update your photo and personal details.</p>
+            </div>
+            <div class="user-shortcut">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="user-avatar-small">A</div>
+            </div>
         </header>
         <div class="content-wrapper">
-          <div class="content-box">
-            <div class='content-header'>
-              <div class="user-avatar-big">A</div>
-              <div class="btn-box">
-                <button type="button" class="upload-btn">
-                  <i class="fa-solid fa-cloud-arrow-up"></i>
-                  <span>Upload</span>
-              </button>
-                <button type="button" class="remove-btn">
-                  <i class="fa-solid fa-trash-can"></i>
-                  <span>Remove</span>
-                </button>
-              </div>
-            </div>
-            <div class="form-wrapper">
-              <form action="" method="post">
-                <div class="form-body">
-                  <div class="form-row">
-                    <div class="form-box">
-                      <label for="first-name">First Name</label>
-                      <input type="text" placeholder="Alex" name="" id="first-name">
+            <div class="content-box">
+                <div class='content-header'>
+                    <div class="user-avatar-big">A</div>
+                    <div class="btn-box">
+                        <button type="button" class="upload-btn">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <span>Upload</span>
+                        </button>
+                        <button type="button" class="remove-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                            <span>Remove</span>
+                        </button>
                     </div>
-                    <div class="form-box">
-                      <label for="last-name">Last Name</label>
-                      <input type="text" placeholder="Smith" name="" id="last-name">
-                    </div>
-                  </div>
-                  <div class="form-box">
-                    <label for="e-mail">Email Address</label>
-                    <input type="email" id="e-mail" name="e-mail" placeholder="alex.smith@example.com" required>
-                  </div>
-                  <div class="form-box">
-                    <label for="phone-number">Phone Number</label>
-                    <input type='text' id="phone-number" name="phone-number" placeholder="+1 1234 587 890" required>
-                  </div>
-                  <div class="form-box checked-box">
-                    <label for="check-box">Receive updates and newsletters via email</label>
-                    <input type='checkbox' id="check-box" name="check-box" checked="checked">
-                  </div>
                 </div>
-                <div class="submit-box">
-                  <button type="button" class="cancel">cancel</button>
-                  <button type="button" class="changes-btn">Save Changes</button>
+                <div class="form-wrapper">
+                    <form action="" method="post">
+                        <div class="form-body">
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" value="Alex" name="first-name" id="first-name">
+                                </div>
+                                <div class="form-box">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" value="Smith" name="last-name" id="last-name">
+                                </div>
+                            </div>
+                            <div class="form-box">
+                                <label for="email-add">Email Address</label>
+                                <input type="email" id="email-add" name="email-add" value="alex.smith@example.com">
+                            </div>
+                            <div class="form-box">
+                                <label for="phone-number">Phone Number</label>
+                                <input type='text' id="phone-number" name="phone-number" value="+1 1234 587 890">
+                            </div>
+                            <div class="checked-box">
+                                <label for="check-box">Receive updates and newsletters via email</label>
+                                <input type='checkbox' id="check-box" name="check-box" checked="checked">
+                            </div>
+                        </div>
+                        <div class="submit-box">
+                            <button type="button" class="cancel-btn">cancel</button>
+                            <button type="submit" class="changes-btn">Save Changes</button>
+                        </div>
+                    </form>
                 </div>
-              </form>
+                <!--form-wrapper End /  -->
             </div>
-            <!--form-wrapper End /  -->
-          </div>
         </div>
-      </main>
-    </div>
+    </main>
+</div>
 </body>
 </html>
