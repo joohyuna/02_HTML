@@ -43,7 +43,56 @@
             <div class="user-avatar-small">A</div>
           </div>
         </header>
-        <div class="content-wrapper"></div>
+        <div class="content-wrapper">
+          <div class="content-box">
+            <div class='content-header'>
+              <div class="user-avatar-big">A</div>
+              <div class="btn-box">
+                <button type="button" class="upload-btn">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <span>Upload</span>
+              </button>
+                <button type="button" class="remove-btn">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <span>Remove</span>
+                </button>
+              </div>
+            </div>
+            <div class="form-wrapper">
+              <form action="" method="post">
+                <div class="form-body">
+                  <div class="form-row">
+                    <div class="form-box">
+                      <label for="first-name">First Name</label>
+                      <input type="text" placeholder="Alex" name="" id="first-name">
+                    </div>
+                    <div class="form-box">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" placeholder="Smith" name="" id="last-name">
+                    </div>
+                  </div>
+                  <div class="form-box">
+                    <label for="e-mail">Email Address</label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="alex.smith@example.com" required>
+                  </div>
+                  <div class="form-box">
+                    <label for="phone-number">Phone Number</label>
+                    <input type='text' id="phone-number" name="phone-number" placeholder="+1 1234 587 890" required>
+                  </div>
+                  <div class="form-box checked-box">
+                    <label for="check-box">Receive updates and newsletters via email</label>
+                    <input type='checkbox' id="check-box" name="check-box" checked="checked">
+                  </div>
+                </div>
+                <div class="submit-box">
+                  <button type="button" class="cancel">cancel</button>
+                  <button type="button" class="changes-btn">Save Changes</button>
+                </div>
+              </form>
+            </div>
+            <!--form-wrapper End /  -->
+          </div>
+        </div>
       </main>
     </div>
 </body>
