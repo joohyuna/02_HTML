@@ -3,89 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>관리자 페이지</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 </head>
 <body>
-    <div class="container">
-      <aside class="sidebar">
+<div class="container">
+    <aside class="sidebar">
         <div class="logo">
-          <i class="fa-solid fa-cube brand-icon"></i>
-          <h2>MyDash</h2>
+            <i class="fa-solid fa-cube brand-icon"></i>
+            <h2>MyDash</h2>
         </div>
         <nav class="nav-menu">
-          <a href="#" class="nav-item active">
-            <i class="fa-regular fa-id-badge"></i>
-            <span>Profile Info</span>
-          </a>
-          <a href="#" class="nav-item">
-            <i class="fa-solid fa-shield-halved"></i>
-            <span>Account Security</span>
-          </a>
-          <a href="#" class="nav-item">
-            <i class="fa-regular fa-bell"></i>
-            <span>Notifications</span>
-          </a>
-          <a href="#" class="nav-item">
-            <i class="fa-solid fa-credit-card"></i>
-            <span>Billing Details</span>
-          </a>
+            <a href="#" class="nav-item active">
+                <i class="fa-regular fa-id-badge"></i>
+                <span>Profile Info</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Account Security</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Billing Details</span>
+            </a>
         </nav>
-      </aside>
-      <main class="main-content">
+    </aside>
+    <main class="main-content">
         <header class="top-header">
-          <div class="header-text">
-            <h2>Profile Information</h2>
-            <p>Update your photo and personal details.</p>
-          </div>
-          <div class="user-shortcut">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <div class="user-avatar-small">A</div>
-          </div>
+            <div class="header-text">
+                <h2>Profile Information</h2>
+                <p>Update your photo and personal details.</p>
+            </div>
+            <div class="user-shortcut">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="user-avatar-small">A</div>
+            </div>
         </header>
         <div class="content-wrapper">
-          <form class="profile-form">
-            <div class="avatar-section">
-              <div class="avatar-circle">A</div>
-              <button class="btn btn-primary">
-                <i class="fa-solid fa-cloud-arrow-up"></i> Upload
-              </button>
-              <button class="btn btn-outline">
-                <i class="fa-solid fa-trash-can"></i> Remove
-              </button>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text" class="form-input" id="first-name" Value="Alex" />
-              </div>
-              <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" class="form-input" id="last-name" value="Smith" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="emailAddress">Email</label>
-                <input type="email" class="form-input" id="emailAddress" value="alex.smith@example.com" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phoneNumber">phone Number</label>
-                <input type="tel" class="form-input" id="phoneNumber" value="+1 234 567 890"  />
-              </div>
-            </div>
-            <div class="form-row">
-              <!-- 체크박스 만들곳 -->
-            </div>
-            <div class="form-actions">
-              <button class="btn btn-outline">Cancel</button>
-              <button class="btn btn-primary">Save Changes</button>
-            </div>
-          </form>
+            <form class="profile-form">
+                <div class="avatar-section">
+                    <div class="avatar-circle">A</div>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> Upload
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fa-solid fa-trash-can"></i> Remove
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="form-input" id="first-name" Value="Alex"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-input" id="last-name" value="Smith"/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="emailAddress">Email</label>
+                        <input type="email" class="form-input" id="emailAddress" value="alex.smith@example.com"/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phoneNumber">phone Number</label>
+                        <input type="tel" class="form-input" id="phoneNumber" value="+1 234 567 890"/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                      <label class="custom-checkbox-wrapper">
+                        <input type="checkbox" class="hidden-checkbox" checked />
+                        <div class="checkbox-box">
+                          <div class="checkmark-icon"></div>
+                        </div>
+                        <span class="checkbox-label">Receive updates and newsletters via email</span>
+                      </label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn btn-outline">Cancel</button>
+                    <button class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
         </div>
-      </main>
-    </div>
+    </main>
+</div>
 </body>
 </html>
